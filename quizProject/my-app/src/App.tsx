@@ -51,7 +51,7 @@ function App() {
         
         
         <div className="flex flex-col gap-3">
-          {activeQuestion.options.map((option, index) => (
+          {activeQuestion.options.map((option: string, index) => (
             <button 
               key={index}
               onClick={() => handleAnswer(option)}
